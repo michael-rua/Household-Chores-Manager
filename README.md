@@ -1,2 +1,3 @@
 # Household-Chores-Manager
-A simple app to help with chores management. React native app with a Firebase cloud database. 
+A simple app I am starting to help with my households chores management. React app with a Firebase cloud database.
+Low priority app, although great practice in React.
