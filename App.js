@@ -27,7 +27,7 @@ export default function App () {
               onPress={() => Alert.alert('This will do something soon!')}
             >
               <Text style={styles.text}>
-              Chore Time!
+              Chores Time!
               </Text>
 
             </TouchableOpacity>
