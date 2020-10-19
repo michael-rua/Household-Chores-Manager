@@ -6,10 +6,9 @@ import {
   Text,
   ImageBackground,
   StyleSheet,
-  Image,
-  Button,
   Alert,
-  TouchableOpacity
+  TouchableOpacity,
+  StatusBar
 } from 'react-native'
 
 export default function App () {
@@ -58,7 +57,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     padding: 10,
-    color: 'Black'
+    color: 'black'
   },
   centerContentStyle: {
     position: 'absolute',
