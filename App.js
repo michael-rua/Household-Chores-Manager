@@ -18,13 +18,13 @@ export default function App () {
       <SafeAreaView style={styles.container}>
         {/* <StatusBar style="auto" /> */}
         <ImageBackground source={pic} style={styles.image}>
-          <View style= {styles.container}>
-            <View style= {styles.centerContentStyle}>
-              <Text style={styles.text}>
+          {/* <View style= {styles.container}> */}
+          <View style= {styles.centerContentStyle}>
+            <Text style={styles.text}>
         Chores Time!
-              </Text>
-            </View>
+            </Text>
           </View>
+          {/* </View> */}
         </ImageBackground>
       </SafeAreaView>
     </>
@@ -52,6 +52,11 @@ const styles = StyleSheet.create({
     color: '#666'
   },
   centerContentStyle: {
+    position: 'absolute',
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
     justifyContent: 'center',
     alignItems: 'center'
   }
