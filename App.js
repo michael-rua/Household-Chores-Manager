@@ -6,7 +6,10 @@ import {
   Text,
   ImageBackground,
   StyleSheet,
-  Image
+  Image,
+  Button,
+  Alert,
+  TouchableOpacity
 } from 'react-native'
 
 export default function App () {
@@ -20,9 +23,15 @@ export default function App () {
         <ImageBackground source={pic} style={styles.image}>
           {/* <View style= {styles.container}> */}
           <View style= {styles.centerContentStyle}>
-            <Text style={styles.text}>
-        Chores Time!
-            </Text>
+            <TouchableOpacity
+              style={styles.button}
+              onPress={() => Alert.alert('This will do something soon!')}
+            >
+              <Text style={styles.text}>
+              Chore Time!
+              </Text>
+
+            </TouchableOpacity>
           </View>
           {/* </View> */}
         </ImageBackground>
@@ -45,11 +54,11 @@ const styles = StyleSheet.create({
     right: 0
   },
   text: {
-    fontSize: 35,
+    fontSize: 40,
     fontWeight: 'bold',
     textAlign: 'center',
     padding: 10,
-    color: '#666'
+    color: 'Black'
   },
   centerContentStyle: {
     position: 'absolute',
@@ -59,5 +68,12 @@ const styles = StyleSheet.create({
     right: 0,
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  button: {
+    alignItems: 'center',
+    borderWidth: 2,
+    borderColor: 'black',
+    padding: 10,
+    borderRadius: 5
   }
 })
